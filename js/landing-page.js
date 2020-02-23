@@ -3,17 +3,16 @@
   "use strict";
 
   // Refresh on browser resize
-  $(document).ready(function() {
-    var windowWidth = GetWidth();
-    var windowHeight = GetHeight();
-
-    window.onresize = function() {
-      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
-        location.reload();
-      }
-    }
+  $(window).bind('resize', function(e)
+  {
+    if (window.RT) 
+      clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 200);
   });
-
+  
 })(jQuery);
 
 // Determine if the device a mobile
@@ -88,7 +87,8 @@ function SetX(currentWidth) {
       'img/sketches/jennifer-lawrence-02.jpg',
       'img/sketches/arms-of-an-assassin.jpg',
       'img/sketches/cr7.jpg',
-      'img/sketches/olivia-wilde-02.jpg'
+      'img/sketches/olivia-wilde-02.jpg',
+      'img/sketches/lion-king.jpg'
       );
 
   var index = 0;
