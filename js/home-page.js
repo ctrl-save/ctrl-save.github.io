@@ -190,6 +190,7 @@ $(function()
 });
 
 
+
 // Determine if the device a mobile
 function IsMobile() { 
   var isMobile = false; //initiate as false
