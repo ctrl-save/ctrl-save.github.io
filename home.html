@@ -28,13 +28,7 @@
 	<link href="css/home-page.css" rel="stylesheet">
 </head>
 
-<!-- <body style="background-image:url(img/bg-masthead-misty.jpg);"> -->
-	<body>
-	<!-- <nav>
-		<a href="#">Home</a>
-	    <a href="#">About me</a>
-	    <a href="#">Contact</a>
-	</nav> -->
+<body id="page-top">	
 
 	<!-- Menu -->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -54,8 +48,11 @@
 						<a class="nav-link js-scroll-trigger" href="#about">About <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#">Features</a>
-					</li>		      
+						<a class="nav-link js-scroll-trigger" href="#galleries">Featured</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#thenVsNow">Then vs Now</a>
+					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#contactme">Contact Me</a>
 					</li>
@@ -93,26 +90,72 @@
 	</section>
 
 
+	<!-- Galleries Section -->
+  	<section id="galleries" class="galleries-section bg-light">
+	    <div class="container">
 
+	      <!-- Featured Project Row -->
+	      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+	        <div class="col-xl-8 col-lg-7">
+	          <img class="img-fluid mb-3 mb-lg-0" src="img/sketches/john-wick.jpg" alt="">
+	        </div>
+	        <div class="col-xl-4 col-lg-5">
+	          <div class="featured-text text-center text-lg-left">
+	            <h4>Baba Yaga</h4>
+	            <p class="text-black-50 mb-0">One of my favorite works. Primarily because the intensity, depth and contrast due to light and shadow came out pretty well.</p>
+	          </div>
+	        </div>
+	      </div>
+	</section>
 
-	<!-- Original Signup Section -->
-	<!-- <section id="contactme" class="contactme-section">
+	<section id="thenVsNow" class="galleries-section bg-light">
 		<div class="container">
-			<div class="row">
-				<div class="col-md-10 col-lg-8 mx-auto text-center">				
-					<i class="far fa-envelope fa-2x mb-2 text-white"></i>
-					<h2 class="text-white mb-5">Like what you see? Contact me and send a pic of anything you want sketched.</h2>
-					<form class="reused_form">				      	
-						<div class="form-inline d-flex">
-							<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-							<button type="submit" class="btn-submit btn btn-dark mx-auto">Subscribe</button>
-						</div>				        
-					</form>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	      <!-- Project One Row -->
+	      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">	      	
+	        <div class="col-lg-6 fit-image">
+	          <img class="img-fluid" src="img/sketches/olivia-wilde-01.jpg" alt="">
+	        </div>
+	        <div class="col-lg-6">
+	          <div class="bg-black text-center h-100 project">
+	            <div class="d-flex h-100">
+	              <div class="gallery-text w-100 my-auto text-center text-lg-left">
+	                <h4 class="text-white">Then</h4>
+	                <p class="mb-0 text-white-50">First attempt at sketching Olivia Wilde's portrait. Notice the hard lines for facial features, especially the eyes and mouth. And the hesitation in using darker pencils.</p>
+	                <hr class="d-none d-lg-block mb-0 ml-0">
+	              </div>
+	            </div>
+	          </div>
+	        </div>
 
+	      </div>
+
+	      <!-- Project Two Row -->
+	      <div class="row justify-content-center no-gutters">
+	        <div class="col-lg-6 fit-image">
+	          <img class="img-fluid" src="img/sketches/olivia-wilde-02.jpg" alt="">
+	        </div>
+	        <div class="col-lg-6 order-lg-first">
+	          <div class="bg-black text-center h-100 project">
+	            <div class="d-flex h-100">
+	              <div class="gallery-text w-100 my-auto text-center text-lg-right">
+	                <h4 class="text-white">Now</h4>
+	                <p class="mb-0 text-white-50">Most recent attempt. Observe how the lines are smoother and the presence of greater contrast and well defined contours and shadows.</p>
+	                <hr class="d-none d-lg-block mb-0 mr-0">
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+
+	      <div class="gallery-text text-center bg-light">
+			<h2 class="text-dark">Visit the <a href="#thenVsNow" class="js-scroll-trigger">Then vs Now</a> gallery and observe more ways to improve.</h2>
+		  </div>
+
+	    </div>
+	</section>	
+
+	
+	<!-- Contact Me section -->
 	<section id="contactme" class="contactme-section">
 		<div class="container">
 			<div class="row">

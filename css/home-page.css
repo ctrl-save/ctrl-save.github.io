@@ -85,6 +85,23 @@ body{
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
+/*Featured works section*/
+
+.galleries-section {
+  padding: 10rem 0;
+}
+
+.galleries-section .featured-text {
+  padding: 2rem;
+}
+
+
+.galleries-section .gallery-text {
+  padding: 3rem;
+  font-size: 90%;
+}
+
+
 /* Contact me section */
 
 .contactme-section {
@@ -177,11 +194,36 @@ body{
     max-width: 30rem;
     font-size: 1.5rem;
   }
+
+
+  .galleries-section .featured-text {
+    padding: 0 0 0 2rem;
+    border-left: 0.5rem solid #64a19d;
+  }
+
+  .galleries-section .gallery-text {
+    padding: 5rem;
+  }
+
+  .galleries-section .gallery-text hr {
+    border-color: #64a19d;
+    border-width: .25rem;
+    width: 30%;
+  }
+
 }
 
 
+.bg-black {
+  background-color: #161616;
+}
 
-
+.fit-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  object-position: center;
+}
 
 
 /*
