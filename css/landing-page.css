@@ -13,7 +13,7 @@ body {
 }
 
 .landing-page {
-  background: linear-gradient(to left, rgba(22, 22, 22, 0.5) 50%, #161616 100%);
+  background-color: rgba(22, 22, 22, 0.5);
 }
 
 .bg-div {  
@@ -23,7 +23,7 @@ body {
   text-align: center;
   display: flex;  
   align-items: center;
-  justify-content: center;    
+  /*justify-content: center;    */
   z-index: -1;
   position: absolute;  
 }
@@ -45,6 +45,10 @@ body {
   .container-div {    
     width: 45%;    
     float: right;
+  }
+
+  .landing-page {
+    background: linear-gradient(to left, rgba(22, 22, 22, 0.5) 50%, rgba(22, 22, 22, 0.7)  100%);       /*#161616*/
   }
 }
 
@@ -86,4 +90,91 @@ h4,
 h5,
 h6 {
   font-weight: 700;
+}
+
+
+
+.container {  
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );  
+  width: 100%;
+  grid-gap: 5px;
+}
+
+.cell {
+  height: 200px;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.cell-1 {
+  background-image: url("../img/sketches/zootopia-selfie.jpg");  
+
+  /*background: deepskyblue;*/
+}
+.cell-2 {
+  background-image: url("../img/sketches/keira-knightley-02.jpg");  
+}
+.cell-3 {
+  background-image: url("../img/sketches/van-dijk.jpg");  
+}
+.cell-4 {
+  background-image: url("../img/sketches/back-pose.jpg");  
+}
+
+.cell-5 {
+  background-image: url("../img/sketches/cr7.jpg");  
+}
+.cell-6 {
+  background-image: url("../img/sketches/batman-arkham-city.jpg");  
+}
+.cell-7 {
+  background-image: url("../img/sketches/super-saiyan-goku.jpg");
+}
+.cell-8 {
+  background-image: url("../img/sketches/jennifer-lawrence-02.jpg");  
+}
+
+.cell-9 {
+  background-image: url("../img/sketches/pug-sketch.jpg");    
+}
+.cell-10 {
+  background-image: url("../img/sketches/olivia-wilde-02.jpg");   
+}
+.cell-11 {
+  background-image: url("../img/sketches/arms-of-an-assassin.jpg");  
+}
+.cell-12 {
+  background-image: url("../img/sketches/lion-king.jpg");  
+}
+
+.cell-13 {
+  background-image: url("../img/sketches/elsa.jpg");  
+}
+.cell-14 {
+  background-image: url("../img/sketches/john-wick.jpg");
+}
+.cell-15 {
+  background-image: url("../img/sketches/joker.jpg");
+}
+.cell-16 {  
+  background-image: url("../img/sketches/emma-watson-02.jpg");  
+}
+
+.cell-17 {
+  background-image: url("../img/sketches/lamborghini-centenario-roadster.jpg");  
+}
+.cell-18 {
+  background-image: url("../img/sketches/messi.jpg");
+}
+.cell-19 {
+  background-image: url("../img/sketches/ratatouille.jpg");  
+}
+.cell-20 {
+  background-image: url("../img/sketches/teen-titans.jpg");  
 }
