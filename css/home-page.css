@@ -226,6 +226,11 @@ body{
 }
 
 
+.error-message,
+.success-message{
+  display: none;
+}
+
 /*
 .right {
   float: right;  
