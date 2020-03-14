@@ -140,7 +140,11 @@ body{
 }
 
 
-@media (min-width: 992px) {
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) { /*992px*/
   #mainNav {
     padding-top: 0;
     padding-bottom: 0;
@@ -257,6 +261,63 @@ body{
     transform: none;
   }
 
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /*.masthead {
+    height: 100vh;
+    padding: 0;
+  }*/
+
+  .masthead h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .masthead h2 {
+    max-width: 30rem;
+    font-size: 1rem;
+  }
+
+  #contact-form-big-screens {
+    display: block;
+  }
+  #contact-form-small-screens {
+    display: none;
+  }
+
+
+  .fade-in-section {
+    opacity: 0;
+    /*transform: translateX(20vh);*/
+    transform: translateY(5vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+  }
+  .fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+  }
+
+  section {
+    opacity: 0;
+    /*transform: translate(0, 20px);   
+    transition: all 1s;*/
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: none;
+  }
+  
 }
 
 
