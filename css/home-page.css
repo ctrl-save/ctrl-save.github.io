@@ -130,6 +130,9 @@ body{
 #contact-form-big-screens {
   display: none;
 }
+#contact-form-medium-screens {
+  display: none;
+}
 #contact-form-small-screens {
   display: block;
 }
@@ -231,6 +234,9 @@ body{
   #contact-form-big-screens {
     display: block;
   }
+  #contact-form-medium-screens {
+    display: none;
+  }
   #contact-form-small-screens {
     display: none;
   }
@@ -286,6 +292,9 @@ body{
   }
 
   #contact-form-big-screens {
+    display: none;
+  }
+  #contact-form-medium-screens {
     display: block;
   }
   #contact-form-small-screens {
