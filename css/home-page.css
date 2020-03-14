@@ -97,7 +97,6 @@ body{
   padding: 2rem;
 }
 
-
 .galleries-section .gallery-text {
   padding: 3rem;
   font-size: 90%;
@@ -126,6 +125,13 @@ body{
 
 .contactme-section .btn-submit {  
   padding: 1rem 2rem;
+}
+
+#contact-form-big-screens {
+  display: none;
+}
+#contact-form-small-screens {
+  display: block;
 }
 
 /* Footer section */
@@ -216,6 +222,13 @@ body{
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
+  }
+
+  #contact-form-big-screens {
+    display: block;
+  }
+  #contact-form-small-screens {
+    display: none;
   }
 
 
