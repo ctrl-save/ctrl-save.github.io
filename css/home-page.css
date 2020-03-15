@@ -329,6 +329,30 @@ body{
   
 }
 
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .masthead {
+    height: 100vh;
+    padding: 0;
+  }
+  
+  #contact-form-big-screens {
+    display: none;
+  }
+  #contact-form-medium-screens {
+    display: block;
+  }
+  #contact-form-small-screens {
+    display: none;
+  }  
+  
+}
+
 
 .bg-black {
   background-color: #161616;
