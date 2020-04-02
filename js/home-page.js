@@ -41,6 +41,45 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
   
+   // flipbook functions
+  $("#btn-sketchbook").click(function(){
+    $("body").addClass("noScroll");
+    $("#contactme").addClass("dim-background");
+    $("#thenVsNow").addClass("dim-background");  
+  });  
+  
+  $(".close").click(function(){
+    $("body").removeClass("noScroll");
+    $("#contactme").removeClass("dim-background");
+    $("#thenVsNow").removeClass("dim-background");  
+  });
+  
+  
+  var screenWidth = GetWidth();
+  if(screenWidth >= 1025)
+  {
+    $("#flipbook").turn({
+      width: 900,
+      height: 600,
+      autoCenter: false
+    });
+  }
+  else if(screenWidth >= 768 && screenWidth <= 1024)
+  {
+    $("#flipbook").turn({
+      width: 600,
+      height: 400,
+      autoCenter: false
+    });
+  }
+  else if(screenWidth >= 481 && screenWidth <= 767)
+  {
+    $("#flipbook").turn({
+      width: 400,
+      height: 350,
+      autoCenter: true
+    });
+  }
 
 })(jQuery);
 
@@ -84,3 +123,25 @@ $(document).on("scroll", function () {
     }
   }
 })
+
+
+// flipbook JS functions
+// Get the modal
+var modalBook = document.getElementById("modal-sketchbook");
+
+// Get the button that opens the modal
+var btnSketchbook = document.getElementById("btn-sketchbook");
+
+// Get the <span> element that closes the modal
+var spanBook = document.getElementById("close-sketchbook");
+
+// When the user clicks the button, open the modal 
+btnSketchbook.onclick = function() {
+  modalBook.style.display = "block";
+  // modal.style.top = "20%";
+}
+
+// When the user clicks on <span> (x), close the modal
+spanBook.onclick = function() {
+  modalBook.style.display = "none";  
+}

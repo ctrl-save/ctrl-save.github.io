@@ -7,7 +7,15 @@ body{
   font-family: 'Varela Round';
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: rgb(72, 58, 102);
+  background: rgb(255, 255, 255);
+}
 
+::selection {
+  color: rgb(72, 58, 102);
+  background: rgb(255, 255, 255);
+}
 
 /*nav {
     display: flex;
@@ -87,20 +95,181 @@ body{
 
 /*Featured works section*/
 
-.galleries-section {
+.gallery-section {
   padding-top: 5rem;
   padding-bottom: 1rem;
   /*padding: 5rem 0;*/
 }
 
-.galleries-section .featured-text {
+.gallery-section .featured-text {
   padding: 2rem;
 }
 
-.galleries-section .gallery-text {
+.gallery-section .gallery-text {
   padding: 3rem;
   font-size: 90%;
 }
+
+
+/* Sketchbook section */
+.sketchbook-section {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  top: 30%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.7); /*Black w/ opacity*/  
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: transparent;
+  margin: auto;
+  width: 402px;
+  height: 380px;
+}
+
+.dim-background {   
+  filter: brightness(10%);
+}
+
+.noScroll { 
+  overflow-y: hidden;
+}
+
+.cell {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #F1F1D4;
+}
+
+.ls-bg {
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #c0c4c4;
+  overflow: hidden;
+}
+
+.cover-pg {
+  background-image: url("../img/bright-cave.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.inner-cover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, rgba(22, 22, 22, 0.5) 50%, #161616 100%), url("../img/pencil-cover-2.jpg");  
+  background-position: center;
+  background-size: contain;
+}
+.back-cover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, rgba(22, 22, 22, 0.5) 50%, #161616 100%), url("../img/pencil-cover.png");
+  background-position: center;
+  background-size: cover;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 20%, rgba(22, 22, 22, 0.5) 50%, #161616 100%); */
+}
+.empty-pg {
+  background-image: url("../img/rumpled-paper.jpg");
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  line-height: 330px;
+  word-wrap: break-word;
+}
+
+.sketchbook-title {
+  font-family: 'Euphoria Script', cursive;
+  font-size: 2.0rem;
+  color: rgb(77, 78, 77); 
+}
+
+/*Portrait oriented sketches*/
+.pg1 {
+  background-image: url("../img/sketches/emma-watson-02.jpg");  
+}
+.pg2 {
+  background-image: url("../img/sketches/keira-knightley-02.jpg");
+}
+.pg3 {
+  background-image: url("../img/sketches/van-dijk.jpg");
+}
+.pg4 {
+  background-image: url("../img/sketches/joker.jpg");
+}
+.pg5 {
+  background-image: url("../img/sketches/elsa.jpg");
+}
+.pg6 {
+  background-image: url("../img/sketches/jennifer-lawrence-02.jpg");
+}
+.pg7 {
+  background-image: url("../img/sketches/john-wick.jpg");
+}
+.pg8 {
+  background-image: url("../img/sketches/cr7.jpg");
+}
+.pg9 {
+  background-image: url("../img/sketches/olivia-wilde-02.jpg");
+}
+.pg10 {
+  background-image: url("../img/sketches/batman-arkham-city.jpg");
+}
+
+/*Landscape oriented sketches*/
+.pg1-ls {
+  background-image: url("../img/sketches/ratatouille.jpg");  
+}
+.pg2-ls {
+  background-image: url("../img/sketches/arms-of-an-assassin.jpg");
+}
+.pg3-ls {
+  background-image: url("../img/sketches/zootopia-selfie.jpg");
+}
+.pg4-ls {  
+  background-image: url("../img/sketches/lion-king.jpg");  
+}
+.pg5-ls {  
+  background-image: url("../img/sketches/lamborghini-centenario-roadster.jpg");  
+}
+.pg6-ls {  
+  background-image: url("../img/sketches/pug-sketch.jpg");  
+}
+.pg7-ls {  
+  background-image: url("../img/sketches/teen-titans.jpg");  
+}
+
+#btn-sketchbook {
+  padding: 1rem 2rem;
+  /* background-color: rgb(121, 96, 96); */
+  box-shadow: 5px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* The Close Button */
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(70, 69, 69);
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 /* Contact me section */
@@ -211,21 +380,21 @@ body{
   }
 
 
-  .galleries-section {
+  .gallery-section {
     padding-top: 10rem;
     padding-bottom: 1rem;    
   }
 
-  .galleries-section .featured-text {
+  .gallery-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid #64a19d;
   }
 
-  .galleries-section .gallery-text {
+  .gallery-section .gallery-text {
     padding: 5rem;
   }
 
-  .galleries-section .gallery-text hr {
+  .gallery-section .gallery-text hr {
     border-color: #64a19d;
     border-width: .25rem;
     width: 30%;
@@ -265,6 +434,24 @@ body{
   section.visible {
     opacity: 1;
     transform: none;
+  }
+
+  /*Sketchbook*/
+  .sketchbook-title {
+    font-size: 4.5rem;
+  }
+
+  .empty-pg {
+    line-height: 600px;
+  }
+
+  .modal {
+    top: 12%;
+  }
+
+  .modal-content {    
+    width: 902px;
+    height: 632px;
   }
 
 }
@@ -325,6 +512,25 @@ body{
   section.visible {
     opacity: 1;
     transform: none;
+  }
+
+
+  /*Sketchbook*/
+  .sketchbook-title {
+    font-size: 3.0rem;
+  }
+
+  .empty-pg {
+    line-height: 370px;
+  }
+
+  .modal {
+    top: 20%;
+  }
+
+  .modal-content {
+    width: 602px;
+    height: 432px;
   }
   
 }

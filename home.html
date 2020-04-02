@@ -13,20 +13,24 @@
 	<!-- To-do add icon link -->	
 
 	<!-- Bootstrap Core CSS -->
-	<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 
 	<!-- Bootstrap core JavaScript -->
 	<script src="vendor/jquery/jquery.min.js" type="text/javascript"></script>
-	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 
 	<!-- Plugin JavaScript -->
 	<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Turn.js -->
+	<script src="vendor/turnjs4/lib/turn.min.js"></script>
 
 	<!-- <script type="text/javascript" src="js/jquery.ajax-cross-origin.min.js"></script> -->
 
 	<!-- Custom fonts for this template -->
 	<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
 	<!-- Custom CSS -->
@@ -53,10 +57,13 @@
 						<a class="nav-link js-scroll-trigger" href="#about">About <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link js-scroll-trigger" href="#galleries">Featured</a>
+						<a class="nav-link js-scroll-trigger" href="#gallery">Featured</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#thenVsNow">Then vs Now</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="#sketchbook">Sketchbook</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link js-scroll-trigger" href="#contactme">Contact Me</a>
@@ -84,7 +91,7 @@
 				<div class="col-lg-8 mx-auto">
 					<h2 class="text-white mb-4">Self-taught Sketch Artist</h2>
 					<p class="text-white-50">
-						Aiming to get better with each sketch. Browse the gallery to see all my sketches. Check out the "Then vs Now" section to view my first portrait sketches of a subject against their most recent ones.
+						Aiming to get better with each sketch. Flip through the sketchbook to see all my sketches. Check out the "Featured" and "Then vs Now" sections to view some of my favorite works.
 						<br />
 
 					</p>
@@ -95,70 +102,149 @@
 	</section>
 
 
-	<!-- Galleries Section -->
-  	<section id="galleries" class="galleries-section bg-light fade-in-section">
-	    <div class="container">
+	<!-- Gallery Section -->
+	<section id="gallery" class="gallery-section bg-light fade-in-section">
+		<div class="container">
 
-	      <!-- Featured Project Row -->
-	      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
-	        <div class="col-xl-8 col-lg-7 fit-image">
-	          <img class="img-fluid mb-3 mb-lg-0" src="img/sketches/john-wick.jpg" alt="">
-	        </div>
-	        <div class="col-xl-4 col-lg-5">
-	          <div class="featured-text text-center text-lg-left">
-	            <h4>Baba Yaga</h4>
-	            <p class="text-black-50 mb-0">One of my favorite works. Primarily because the intensity, depth and contrast due to light and shadow came out pretty well.</p>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
+			<!-- Featured Project Row -->
+			<div class="row align-items-center no-gutters mb-4 mb-lg-5">
+				<div class="col-xl-8 col-lg-7 fit-image">
+					<img class="img-fluid mb-3 mb-lg-0" src="img/sketches/john-wick.jpg" alt="">
+				</div>
+				<div class="col-xl-4 col-lg-5">
+					<div class="featured-text text-center text-lg-left">
+						<h4>Baba Yaga</h4>
+						<p class="text-black-50 mb-0">One of my favorite works. Primarily because the intensity, depth and contrast due to light and shadow came out pretty well.</p>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section id="thenVsNow" class="galleries-section bg-light fade-in-section">
+	<section id="thenVsNow" class="gallery-section bg-light fade-in-section">
 		<div class="container">
-	      <!-- Project One Row -->
-	      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">	      	
-	        <div class="col-lg-6 fit-image">
-	          <img class="img-fluid" src="img/sketches/olivia-wilde-01.jpg" alt="">
-	        </div>
-	        <div class="col-lg-6">
-	          <div class="bg-black text-center h-100 project">
-	            <div class="d-flex h-100">
-	              <div class="gallery-text w-100 my-auto text-center text-lg-left">
-	                <h4 class="text-white">Then</h4>
-	                <p class="mb-0 text-white-50">First attempt at sketching Olivia Wilde's portrait. Notice the hard lines for facial features, especially the eyes and mouth. And the hesitation in using darker pencils.</p>
-	                <hr class="d-none d-lg-block mb-0 ml-0">
-	              </div>
-	            </div>
-	          </div>
-	        </div>
+			<div class="gallery-text text-center bg-light">
+				<h2 class="text-dark">Visit the <a href="#thenVsNow" class="js-scroll-trigger">Then vs Now</a> gallery to view more improvement journeys.</h2>
+			</div>
 
-	      </div>
+			<!-- Project One Row -->
+			<div class="row justify-content-center no-gutters mb-5 mb-lg-0">	      	
+				<div class="col-lg-6 fit-image">
+					<img class="img-fluid" src="img/sketches/olivia-wilde-01.jpg" alt="">
+				</div>
+				<div class="col-lg-6">
+					<div class="bg-black text-center h-100 project">
+						<div class="d-flex h-100">
+							<div class="gallery-text w-100 my-auto text-center text-lg-left">
+								<h4 class="text-white">Then</h4>
+								<p class="mb-0 text-white-50">First attempt at sketching Olivia Wilde's portrait. Notice the hard lines for facial features, especially the eyes and mouth. And the hesitation in using darker pencils.</p>
+								<hr class="d-none d-lg-block mb-0 ml-0">
+							</div>
+						</div>
+					</div>
+				</div>
 
-	      <!-- Project Two Row -->
-	      <div class="row justify-content-center no-gutters">
-	        <div class="col-lg-6 fit-image">
-	          <img class="img-fluid" src="img/sketches/olivia-wilde-02.jpg" alt="">
-	        </div>
-	        <div class="col-lg-6 order-lg-first">
-	          <div class="bg-black text-center h-100 project">
-	            <div class="d-flex h-100">
-	              <div class="gallery-text w-100 my-auto text-center text-lg-right">
-	                <h4 class="text-white">Now</h4>
-	                <p class="mb-0 text-white-50">Most recent attempt. Observe how the lines are smoother and the presence of greater contrast and well defined contours and shadows.</p>
-	                <hr class="d-none d-lg-block mb-0 mr-0">
-	              </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
+			</div>
 
-	      <div class="gallery-text text-center bg-light">
-			<h2 class="text-dark">Visit the <a href="#thenVsNow" class="js-scroll-trigger">Then vs Now</a> gallery to view more improvement journeys.</h2>
-		  </div>
+			<!-- Project Two Row -->
+			<div class="row justify-content-center no-gutters">
+				<div class="col-lg-6 fit-image">
+					<img class="img-fluid" src="img/sketches/olivia-wilde-02.jpg" alt="">
+				</div>
+				<div class="col-lg-6 order-lg-first">
+					<div class="bg-black text-center h-100 project">
+						<div class="d-flex h-100">
+							<div class="gallery-text w-100 my-auto text-center text-lg-right">
+								<h4 class="text-white">Now</h4>
+								<p class="mb-0 text-white-50">Most recent attempt. Observe how the lines are smoother and the presence of greater contrast and well defined contours and shadows.</p>
+								<hr class="d-none d-lg-block mb-0 mr-0">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-	    </div>
-	</section>	
+		</div>
+	</section>
+
+
+	<!-- Sketchbook Section -->
+	<section id="sketchbook" class="sketchbook-section bg-light">
+		<div class="container">
+
+			<div class="gallery-text text-center bg-light">
+				<h2 class="text-dark">Flip through my works while chilling!
+			</div>
+			<br />
+
+			<div class="row justify-content-center no-gutters mb-5 mb-lg-0">				
+				<div class="h-100 project">
+					<div class="w-100 my-auto text-center">
+						<!-- <h2>Modal Example</h2> -->
+						<button id="btn-sketchbook" class="btn btn-dark mx-auto">SKETCHBOOK</button>						
+
+						<!-- Featured Project Row -->
+						<div id="modal-sketchbook" class="modal row align-items-center no-gutters mb-4 mb-lg-5">
+							<div id="sketchbook" class="modal-content">
+								<span id="close-sketchbook" class="close text-right">&times;</span>
+
+								<div id="flipbook">
+									<div class="hard cover-pg"></div>
+									<div class="hard inner-cover"></div>
+									<div class="empty-pg"></div>
+
+									<div class="cell pg1"></div>
+									<div class="empty-pg sketchbook-title">Emma Watson</div>
+									<div class="ls-bg pg1-ls"></div>
+									<div class="empty-pg sketchbook-title">Remy</div>
+									<div class="cell pg2"></div>
+									<div class="empty-pg sketchbook-title">Keira Knightley</div>
+									<div class="ls-bg pg2-ls"></div>
+									<div class="empty-pg sketchbook-title">Assassin's Arms</div>
+									<div class="cell pg3"></div>
+									<div class="empty-pg sketchbook-title">Virgil van Dijk</div>
+									<div class="ls-bg pg3-ls"></div>
+									<div class="empty-pg sketchbook-title">Zootopia Selfie</div>
+									<div class="cell pg4"></div>
+									<div class="empty-pg sketchbook-title">Joker</div>
+									<div class="ls-bg pg4-ls"></div>
+									<div class="empty-pg sketchbook-title">Meeting Simba</div>
+									<div class="cell pg5"></div>
+									<div class="empty-pg sketchbook-title">Elsa</div>
+									<div class="ls-bg pg5-ls"></div>
+									<div class="empty-pg sketchbook-title">Centenario Rdster</div>
+									<div class="cell pg6"></div>
+									<div class="empty-pg sketchbook-title">Jennifer Lawrence</div>
+									<div class="ls-bg pg6-ls"></div>
+									<div class="empty-pg sketchbook-title">Pug Face</div>
+									<div class="cell pg7"></div>
+									<div class="empty-pg sketchbook-title">John Wick</div>
+									<div class="ls-bg pg7-ls"></div>
+									<div class="empty-pg sketchbook-title">Teen Titans</div>
+									<div class="cell pg8"></div>
+									<div class="empty-pg sketchbook-title">Cristiano Ronaldo</div>
+									<div class="cell pg9"></div>
+									<div class="empty-pg sketchbook-title">Olivia Wilde</div>
+									<div class="cell pg10"></div>
+									<div class="empty-pg sketchbook-title">Arkham City</div>
+
+									<div class="empty-pg"></div>
+									<div class="hard inner-cover"></div>
+									<div class="hard back-cover"></div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</div>
+	</section>
 
 	
 	<!-- Contact Me section -->
@@ -175,76 +261,77 @@
 					<form class="gform" id="contact-form" method="POST" data-email="from_email@example.com" 
 					action="https://script.google.com/macros/s/AKfycbzcM50udPXrriyC_M3pPVk1dK50eeQSAIt2SD-2s4ZJ6YES0yAz/exec">
 
-						<div id="contact-form-big-screens">
-							<!-- First Row -->
-							<div class="row pl-2 pr-2">
-								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
-								<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
-							</div>
-							<br />
-
-							<!-- Second Row -->
-							<div class="row pl-2 pr-2">							
-									<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive link...">
-							</div>
-						</div>
-
-						<div id="contact-form-medium-screens">
-							<div class="row pl-2 pr-2">
-								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
-							</div>
-							<br />
-							<div class="row pl-2 pr-2">
-								<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
-							</div>
-							<br />
-							<div class="row pl-2 pr-2">
-								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive link...">
-							</div>
-						</div>
-						
-						<div id="contact-form-small-screens">
-							<div class="row pl-2 pr-2">
-								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
-								<br />
-								<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
-								<br />
-								<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive 
-								link...">								
-							</div>							
+					<div id="contact-form-big-screens">
+						<!-- First Row -->
+						<div class="row pl-2 pr-2">
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
+							<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
 						</div>
 						<br />
 
-						<!-- Third Row -->
-						<div class="row form-inline">
-							<button type="submit" class="btn btn-dark mx-auto btn-submit">SEND EMAIL</button>
+						<!-- Second Row -->
+						<div class="row pl-2 pr-2">							
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive link...">
 						</div>
-					</form>
+					</div>
+
+					<div id="contact-form-medium-screens">
+						<div class="row pl-2 pr-2">
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
+						</div>
+						<br />
+						<div class="row pl-2 pr-2">
+							<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
+						</div>
+						<br />
+						<div class="row pl-2 pr-2">
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive link...">
+						</div>
+					</div>
+
+					<div id="contact-form-small-screens">
+						<div class="row pl-2 pr-2">
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-name" name="name" placeholder="Name" required>
+							<br />
+							<input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-email" name="email" placeholder="Email" required>
+							<br />
+							<input type="text" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="input-image-url" name="image" placeholder="Enter Image URL/Google Drive 
+							link...">								
+						</div>							
+					</div>
+					<br />
+
+					<!-- Third Row -->
+					<div class="row form-inline">
+						<button type="submit" class="btn btn-dark mx-auto btn-submit">SEND EMAIL</button>
+					</div>
+				</form>
 
 	                <!-- <div class="error-message row text-danger">
     					<h2>Something went wrong. Please try again later.</h2>                    	
-                	</div> -->
+    				</div> -->
 
-                    <div class="success-message row text-dark">
-						<h2>Cheers! Will get right to it!</h2>
-					</div>
+    				<div class="success-message row text-dark">
+    					<h2>Cheers! Will get right to it!</h2>
+    				</div>
 
-				</div>
-			</div>
-		</div>
-	</section>
+    			</div>
+    		</div>
+    	</div>
+    </section>
 
-<!-- Footer -->
-<footer class="footer small text-center text-white-50">
-	<div class="container">
-		Copyright &copy; Sketch Gallery 2020
-	</div>
-</footer>
+    <!-- Footer -->
+    <footer class="footer small text-center text-white-50">
+    	<div class="container">
+    		Copyright &copy; Sketch Gallery 2020
+    	</div>
+    </footer>
 
 
-<!-- Custom scripts for this template -->
-<script src="js/home-page.js" type="text/javascript"></script>
-<script src="js/contact-me-handler.js" type="text/javascript" data-cfasync="false"></script>
+    <!-- Custom scripts for this template -->
+    <script src="js/home-page.js" type="text/javascript"></script>
+    <script src="js/contact-me-handler.js" type="text/javascript" data-cfasync="false"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 
