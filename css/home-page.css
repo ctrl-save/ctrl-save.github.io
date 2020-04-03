@@ -1,5 +1,5 @@
 /**
-TO DO: Combine files and minify before deployment
+TO DO: Minify before prod deployment
 **/
 
 
@@ -89,7 +89,7 @@ body{
 
 /* About section */
 .about-section {
-  padding-top: 9rem;
+  padding-top: 10rem;
   background: linear-gradient(to bottom, #161616 0%, rgba(22, 22, 22, 0.9) 75%, rgba(22, 22, 22, 0.8) 100%);
 }
 
@@ -382,7 +382,7 @@ body{
 
   .gallery-section {
     padding-top: 10rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 1rem;
   }
 
   .gallery-section .featured-text {
@@ -399,6 +399,12 @@ body{
     border-width: .25rem;
     width: 30%;
   }
+
+  /* Sketchbook section */
+  /* .sketchbook-section {
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+  } */
 
   #contact-form-big-screens {
     display: block;
@@ -464,7 +470,7 @@ body{
   
   .masthead {
     height: 100vh;
-    padding: 0;
+    padding: 15rem 0;
   }
 
   .masthead h1 {
