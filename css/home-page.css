@@ -140,8 +140,8 @@ body{
 .modal-content {
   background-color: transparent;
   margin: auto;
-  width: 282px;
-  height: 282px;
+  width: 322px;
+  height: 322px;
 }
 
 .dim-background {   
@@ -567,7 +567,11 @@ body{
   }
   #contact-form-small-screens {
     display: none;
-  }  
+  }
+
+  .modal {
+    padding-top: 3rem;
+  }
   
 }
 
