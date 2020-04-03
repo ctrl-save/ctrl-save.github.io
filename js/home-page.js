@@ -97,19 +97,6 @@
 
 })(jQuery);
 
-
-// function preventDefault(e){
-//   e.preventDefault();
-// }
-
-function disableScroll(){
-  document.body.addEventListener('touchmove', preventDefault, { passive: false });
-}
-function enableScroll(){
-  document.body.removeEventListener('touchmove', preventDefault);
-}
-
-
 // Get width for current screen
 function GetWidth() {
   return Math.max(
@@ -164,12 +151,9 @@ var spanBook = document.getElementById("close-sketchbook");
 // When the user clicks the button, open the modal 
 btnSketchbook.onclick = function() {
   modalBook.style.display = "block";
-  // disableScroll();
-  // modal.style.top = "20%";
 }
 
 // When the user clicks on <span> (x), close the modal
 spanBook.onclick = function() {
   modalBook.style.display = "none";
-  // enableScroll();
 }
