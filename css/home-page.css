@@ -140,8 +140,8 @@ body{
 .modal-content {
   background-color: transparent;
   margin: auto;
-  width: 232px;
-  height: 232px;
+  width: 282px;
+  height: 282px;
 }
 
 .dim-background {   
@@ -458,7 +458,7 @@ body{
   }
 
   .modal {
-    padding-top: 8rem;
+    padding-top: 6.5rem;
   }
 
   .modal-content {    
@@ -474,10 +474,10 @@ body{
 */
 @media (min-width: 768px) and (max-width: 1024px) {
   
-  /* .masthead {
+  .masthead {
     height: 100vh;
-    padding: 15rem 0;
-  } */
+    padding: 0;
+  }
 
   .masthead h1 {
     font-size: 4rem;
