@@ -44,12 +44,14 @@
    // flipbook functions
   $("#btn-sketchbook").click(function(){
     $("body").addClass("noScroll");
+    $("#mainNav").addClass("menu-disable");
     $("#contactme").addClass("dim-background");
     $("#thenVsNow").addClass("dim-background");  
   });  
   
   $(".close").click(function(){
     $("body").removeClass("noScroll");
+    $("#mainNav").removeClass("menu-disable");
     $("#contactme").removeClass("dim-background");
     $("#thenVsNow").removeClass("dim-background");  
   });

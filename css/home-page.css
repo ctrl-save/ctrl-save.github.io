@@ -57,6 +57,10 @@ body{
   background-color: transparent;
 }
 
+.menu-disable {
+  pointer-events: none;
+}
+
 /* Header section */
 .masthead {
   position: relative;
