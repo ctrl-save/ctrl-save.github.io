@@ -74,12 +74,12 @@
       autoCenter: false
     });
   }
-  else if(screenWidth >= 481 && screenWidth <= 767)
+  else
   {
     $("#flipbook").turn({
-      width: 400,
-      height: 350,
-      autoCenter: true
+      width: 230,
+      height: 200,
+      autoCenter: false
     });
   }
 
