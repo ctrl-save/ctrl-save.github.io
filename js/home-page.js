@@ -94,14 +94,17 @@
       autoCenter: false
     });
 
-    // flipbook functions
-    $("#btn-sketchbook").click(function(){      
-      $("#mainNav").addClass("display-disable");
-    });
-    
-    $(".close").click(function(){
-      $("#mainNav").removeClass("display-disable");
-    });
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      // you're in LANDSCAPE mode
+      // flipbook functions
+      $("#btn-sketchbook").click(function(){      
+        $("#mainNav").addClass("display-disable");
+      });
+      
+      $(".close").click(function(){
+        $("#mainNav").removeClass("display-disable");
+      });
+    }
   }
 
 })(jQuery);
