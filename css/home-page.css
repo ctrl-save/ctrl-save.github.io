@@ -100,7 +100,6 @@ body{
 }
 
 /*Featured works section*/
-
 .gallery-section {
   padding-top: 5rem;
   padding-bottom: 1rem;
@@ -116,6 +115,20 @@ body{
   font-size: 90%;
 }
 
+/*Then vs Now section*/
+.thenvsnow-section {
+  padding-top: 4rem;
+  padding-bottom: 1rem;
+}
+
+.thenvsnow-section .featured-text {
+  padding: 2rem;
+}
+
+.thenvsnow-section .gallery-text {
+  padding: 3rem;
+  font-size: 90%;
+}
 
 /* Sketchbook section */
 .sketchbook-section {
