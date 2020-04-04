@@ -152,6 +152,13 @@ body{
   overflow-y: hidden;
 }
 
+.display-disable {
+  display: none;
+}
+.display-enable {
+  display: block;
+}
+
 .cell {
   height: auto;
   background-repeat: no-repeat;

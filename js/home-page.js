@@ -93,6 +93,15 @@
       height: 290,
       autoCenter: false
     });
+
+    // flipbook functions
+    $("#btn-sketchbook").click(function(){      
+      $("#mainNav").addClass("display-disable");
+    });  
+    
+    $(".close").click(function(){
+      $("#mainNav").addClass("display-enable");
+    });
   }
 
 })(jQuery);
