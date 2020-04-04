@@ -58,6 +58,7 @@
   });
 
   var screenWidth = GetWidth();
+  // desktops and laptops
   if(screenWidth >= 1025)
   {
     $("#flipbook").turn({
@@ -66,6 +67,8 @@
       autoCenter: false
     });
   }
+
+  // tablets and ipads
   else if(screenWidth >= 768 && screenWidth <= 1024)
   {
     $("#flipbook").turn({
@@ -86,6 +89,8 @@
       });
     }
   }
+
+  // all other mobile devices
   else
   {
     $("#flipbook").turn({

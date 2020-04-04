@@ -539,8 +539,7 @@ body{
   .modal-content {
     width: 602px;
     height: 432px;
-  }
-  
+  }  
 }
 
 /* 
@@ -549,7 +548,7 @@ body{
 */
 @media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
   .modal {
-    padding-top: 3.80rem;
+    padding-top: 4rem;
   }
 
   .modal-content {
