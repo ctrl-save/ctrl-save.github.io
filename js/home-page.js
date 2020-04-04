@@ -89,7 +89,7 @@
   else
   {
     $("#flipbook").turn({
-      width: 320,
+      width: 390,
       height: 290,
       autoCenter: false
     });

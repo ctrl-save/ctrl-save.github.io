@@ -140,7 +140,7 @@ body{
 .modal-content {
   background-color: transparent;
   margin: auto;
-  width: 322px;
+  width: 392px;
   height: 322px;
 }
 
@@ -406,12 +406,6 @@ body{
     width: 30%;
   }
 
-  /* Sketchbook section */
-  /* .sketchbook-section {
-    padding-top: 4rem;
-    padding-bottom: 8rem;
-  } */
-
   #contact-form-big-screens {
     display: block;
   }
@@ -545,6 +539,16 @@ body{
     height: 432px;
   }
   
+}
+
+/* 
+  ##Device = Tablets (Landscape)
+  ##Screen = B/w 768 to 1024px
+*/
+@media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+  .modal {
+    padding-top: 4rem;
+  }
 }
 
 /* 
