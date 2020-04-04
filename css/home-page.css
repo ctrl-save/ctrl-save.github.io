@@ -549,7 +549,7 @@ body{
 */
 @media (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
   .modal {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 
   .modal-content {
@@ -581,7 +581,7 @@ body{
   }
 
   .modal {
-    padding-top: 3.5rem;
+    padding-top: 2rem;
   }
   
 }

@@ -42,11 +42,10 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
   
-   // flipbook functions
+  // flipbook functions
   $("#btn-sketchbook").click(function(){
     $("body").addClass("noScroll");
-    $("#mainNav").addClass("menu-disable");
-    $("#mainNav").addClass("display-disable");
+    $("#mainNav").addClass("menu-disable");    
     $("#contactme").addClass("dim-background");
     $("#thenVsNow").addClass("dim-background");  
   });  
@@ -54,7 +53,6 @@
   $(".close").click(function(){
     $("body").removeClass("noScroll");
     $("#mainNav").removeClass("menu-disable");
-    $("#mainNav").addClass("display-enable");
     $("#contactme").removeClass("dim-background");
     $("#thenVsNow").removeClass("dim-background");  
   });
@@ -75,6 +73,18 @@
       height: 400,
       autoCenter: false
     });
+
+    if (window.matchMedia("(orientation: landscape)").matches) {
+      // you're in LANDSCAPE mode
+      // flipbook functions
+      $("#btn-sketchbook").click(function(){      
+        $("#mainNav").addClass("display-disable");
+      });
+      
+      $(".close").click(function(){
+        $("#mainNav").removeClass("display-disable");
+      });
+    }
   }
   else
   {
@@ -84,14 +94,14 @@
       autoCenter: false
     });
 
-    // // flipbook functions
-    // $("#btn-sketchbook").click(function(){      
-    //   $("#mainNav").addClass("display-disable");
-    // });
+    // flipbook functions
+    $("#btn-sketchbook").click(function(){      
+      $("#mainNav").addClass("display-disable");
+    });
     
-    // $(".close").click(function(){
-    //   $("#mainNav").addClass("display-enable");
-    // });
+    $(".close").click(function(){
+      $("#mainNav").removeClass("display-disable");
+    });
   }
 
 })(jQuery);

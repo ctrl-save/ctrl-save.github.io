@@ -77,14 +77,14 @@ function SetX(currentWidth) {
 
 // Change and display images and positions dynamically
 ;(function(window,document) {
-  var backgrounds = new Array(      
-      'img/sketches/joker.jpg',
+  var backgrounds = new Array(
       'img/sketches/emma-watson-02.jpg',
       'img/sketches/john-wick.jpg',
       'img/sketches/batman-arkham-city.jpg',
       'img/sketches/elsa.jpg',
       'img/sketches/super-saiyan-goku.jpg',
       'img/sketches/jennifer-lawrence-02.jpg',
+      'img/sketches/joker.jpg',
       'img/sketches/arms-of-an-assassin.jpg',
       'img/sketches/cr7.jpg',
       'img/sketches/olivia-wilde-02.jpg',
