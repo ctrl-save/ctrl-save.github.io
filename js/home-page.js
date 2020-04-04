@@ -46,6 +46,7 @@
   $("#btn-sketchbook").click(function(){
     $("body").addClass("noScroll");
     $("#mainNav").addClass("menu-disable");
+    $("#mainNav").addClass("display-disable");
     $("#contactme").addClass("dim-background");
     $("#thenVsNow").addClass("dim-background");  
   });  
@@ -53,22 +54,11 @@
   $(".close").click(function(){
     $("body").removeClass("noScroll");
     $("#mainNav").removeClass("menu-disable");
+    $("#mainNav").addClass("display-enable");
     $("#contactme").removeClass("dim-background");
     $("#thenVsNow").removeClass("dim-background");  
   });
 
-  // Refresh on browser resize
-  // $(window).bind('resize', function(e)
-  // {
-  //   if (window.RT) 
-  //     clearTimeout(window.RT);
-  //   window.RT = setTimeout(function()
-  //   {
-  //     this.location.reload(false);
-  //   }, 200);
-  // });
-  
-  
   var screenWidth = GetWidth();
   if(screenWidth >= 1025)
   {
@@ -94,14 +84,14 @@
       autoCenter: false
     });
 
-    // flipbook functions
-    $("#btn-sketchbook").click(function(){      
-      $("#mainNav").addClass("display-disable");
-    });  
+    // // flipbook functions
+    // $("#btn-sketchbook").click(function(){      
+    //   $("#mainNav").addClass("display-disable");
+    // });
     
-    $(".close").click(function(){
-      $("#mainNav").addClass("display-enable");
-    });
+    // $(".close").click(function(){
+    //   $("#mainNav").addClass("display-enable");
+    // });
   }
 
 })(jQuery);
