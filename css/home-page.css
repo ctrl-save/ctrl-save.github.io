@@ -117,8 +117,8 @@ body{
 
 /*Then vs Now section*/
 .thenvsnow-section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .thenvsnow-section .featured-text {
@@ -408,8 +408,8 @@ body{
 
 
   .gallery-section {
-    padding-top: 8rem;
-    padding-bottom: 1rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
   }
 
   .gallery-section .featured-text {
